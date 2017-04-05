@@ -1,0 +1,7 @@
+*.vs
+*.VC.db
+vs_int_dir
+TrackingPlugin/output
+TrackingPlugin/packages
+TrackingPlugin/hololens/include
+Library
