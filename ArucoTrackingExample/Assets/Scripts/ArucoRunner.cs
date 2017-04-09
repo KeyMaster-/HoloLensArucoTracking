@@ -59,6 +59,7 @@ public class ArucoRunner : MonoBehaviour {
         invokeOnDetectionRun();
     }
 
+        //Necessary since only the declaring class can invoke an event
     protected void invokeOnDetectionRun() {
         onDetectionRun.Invoke();
     }

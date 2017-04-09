@@ -9,6 +9,7 @@ public class MarkerObjectPlacer : MonoBehaviour {
     public ArucoRunner trackingRunner;
     public Camera cam;
     
+        //The object should be oriented such that the direction pointing out of the marker image aligns with Z+.
     public GameObject markerObjectPrefab;
 
     protected List<GameObject> quadInstances;
