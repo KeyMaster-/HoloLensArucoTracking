@@ -40,8 +40,8 @@ For more detailed information and explanation, see [this](http://docs.opencv.org
 
 ## Architecture
 The following two images show the typical program flow when the plugin is initialised, and when executing tracking on a single image frame. These should demonstrate how the different components are inteded to interact, and which ones you want to modify to customise the system.
-![Initialisation overview](ReadmeImages/InitialisationOverview.svg)
-![Frame tracking overview](ReadmeImages/FrameTrackingOverview.svg)
+![Initialisation overview](ReadmeImages/InitialisationOverview.png)
+![Frame tracking overview](ReadmeImages/FrameTrackingOverview.png)
 
 ## Script docs
 This section gives more detailed information about the functions and fields of the core Unity scripts.
