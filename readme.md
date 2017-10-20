@@ -23,6 +23,7 @@ If you want to integrate this into your own existing project, you will have to s
 - Create a Plugins folder in your project, and copy the DLLs from the example project to that folder. (Alternatively, you can also build the plugin DLLs yourself as described below)
 You should follow the same folder structure as given in the example, this will make sure that the import settings for the files are set correctly by Unity. (If you can't or don't want to follow that folder structure, make sure that the Editor DLLs are configured to be used only in Editor, and the HoloLens DLLs for the Windows Store Target, x86 architecture).
 - Copy over the contents of the Scripts folder in the example to your own project. The Util folder is not strictly necessary but useful.
+- Enable the WebCam capability for your Unity scene.
 - In your scene, add ArucoRunner, ArucoUpdater and GeneralCameraProvider scripts to any object. (I typically use the camera, but it doesn't matter.) Drag the runner component into the public field of the Updater, and the camera provider into the field of the runner.
 - If you want a specific object that is already in your scene to map to a physical marker, add a TrackedObject component to that object, and supply it with the runner and your main camera. Also give the ID number of the marker you want this object to respond to.
 Alternatively, if you just want all physical markers to be represented by instances of a prefab, add a MarkerObjectPlacer component to any object, supply it with the runner, camera and the prefab you want instantiated.
