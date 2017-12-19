@@ -2,6 +2,9 @@
 
 This project is a native plugin and accompanying C# scripts for Unity that uses the OpenCV Aruco plugin to provide fiducial marker tracking on the HoloLens and in the Unity editor.
 
+## Important Note
+This project is not actively maintained, so proceed at your risk! I hope that it might still be useful in some cases, if only for learning purposes.
+
 ## Features
 - Tracks Aruco fiducial markers using the OpenCV [aruco module](http://docs.opencv.org/3.1.0/d5/dae/tutorial_aruco_detection.html)
 - Provides ready-for-use pose data (position & rotation) of found markers in Unity data types (Vector3, Quaternion)
