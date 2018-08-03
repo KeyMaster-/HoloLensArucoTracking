@@ -33,6 +33,9 @@ Alternatively, if you just want all physical markers to be represented by instan
 - Now configure the values in the camera provider and runner. The most important values are the physical marker size in the runner (given in meters), the image resolution the script will aim to get from the camera, and the camera intrinsics in the camera provider. See below for more details on the meaning of each and how to find the camera intrinsics for your camera.
 - That's it! The GeneralCameraProvider will use your webcam or, if running on the HoloLens, the HoloLens' RGB camera to track markers. See below in the detailed description of the individual components about how the system works and how you can customise and extend it for your purposes.
 
+## Important Note for the RS4 Hololens Update !
+-since the new RS4 Hololens update, the MediaCapture order has changed. Therofore you have to specify 1 in webcam device number! See [this](https://github.com/qian256/HoloLensARToolKit/issues/26) issus and the comment from @qian256.
+
 ## Finding camera intrinsics
 To find camera intrinsics, you will have to run camera calibration on images taken with the camera your app will use to find the markers. For the HoloLens, the example project includes intrinsics generated from 1408x792 photos, scaled down for 896x504 images (linearly by the ratio of the smaller image size to bigger image size). If you want to use a different image size or want to find your own intrinsics values, you should run calibration as described below.
 
